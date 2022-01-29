@@ -1,0 +1,734 @@
+          /* ZAKLADNE VYNULOVANIE NASTAVENII */
+          *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "NimbusSan",Arial,Sans-serif;
+            
+            /* outline: red 1px solid; */
+             }
+             body{
+                background: rgb(48, 48, 48);
+               
+             }
+ /* HEADER - NAVIGACIA */
+          header
+             { 
+             display: flex;
+             flex-direction: column;
+             flex-wrap: wrap;
+              background-size:cover;
+              min-height: 1100px;
+              min-width: 300px;
+             
+               
+              
+              background-image:   linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.6)),  url(../image/pozadie.jpg);   
+              /* background-attachment:fixed; */
+             }
+
+/* LOGO A NAVIGACIA */
+          nav
+            {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding-bottom: 2%;
+            }   
+
+/* LOGO */
+          .logo img
+            {
+            margin-left: 20px;     
+            width: 200px;
+            }
+
+            .logomobil{
+                width: 100px;
+                margin: 0px auto 30px auto;
+            }
+
+/* NAVIGACIA MENU SPOLU */
+           .navigacia
+              {
+               display: flex;
+               flex-wrap: wrap;
+               align-items: flex-start;
+               justify-content: flex-start;
+              }
+              .navigacia a
+              {
+               text-decoration: none;
+               font-size: 14px;
+               padding: 10px 20px;
+               margin: 19px 10px;
+               letter-spacing: 3px;
+               color: white;
+               font-weight: bold;
+               height: 40px;
+               align-items: center;
+               
+              }
+           .navigacia2
+              {
+                /* border: 2px red solid; */
+               display: none;
+               background: rgba(0,0,0,0.4);
+               border-radius: 0 0 20px 20px;
+              }
+              .navigacia2 a
+              {
+               display: flex;
+               text-decoration: none;
+               flex-direction: column;
+               font-size: 14px;
+               padding: 10px 20px;
+               margin: 19px 10px;
+               letter-spacing: 3px;
+               color: white;
+               font-weight: bold;
+               height: 40px;
+               align-items: center;
+              }
+           .navigaciasama
+              {
+               display: flex;
+               flex-direction: row;
+               align-items: flex-start;
+               justify-content: space-between;
+              }
+           .navigaciamobil
+              {
+               padding: 30px 10px 40px 10px;;
+               display: flex;
+               flex-wrap: wrap;
+               align-items: center;
+               height: auto;
+               margin-right: 30px;
+              }
+
+/* ANIMACIA PO DOTYKU MYSKOU */
+           .navigacia a:hover
+              {
+               transition: 0.2s; 
+               border-bottom: white 2px solid;
+               border-radius: 10px;
+               color: #d3de53;
+              }
+            .navigacia2 a:hover
+              {
+               transition: 0.2s; 
+               border-bottom: white 2px solid;
+               border-radius: 10px;
+               color: #d3de53;
+              }
+
+/* MENU ROZVIETENE TLACITKO NA KTOREJ SI STRANKE */
+            .navigacia .domovikona
+              {
+               border-radius: 10px;
+               border-bottom: white 2px solid;
+               color: #d3de53;
+              }
+             .navigacia2 .domovikona
+              {
+               border-radius: 10px;
+               border-bottom: white 2px solid;
+               color: #d3de53;
+              }
+
+/* DOMOV - H1 H4 BUTTON */
+            header .stred
+              {
+               display: flex;
+               flex-wrap: wrap;
+               flex-direction: column;
+               text-align: center;
+               margin-top: 30px;
+              }
+           header .stred h1{
+               width: auto;
+                margin-bottom: 50px;
+                font-size: 50px;
+                color: #d3de53;
+                letter-spacing: 2px;
+                word-spacing: 5px;
+                text-transform: uppercase;
+            }
+            .stred h4{
+                margin-bottom: 100px;
+                font-size: 20px;
+                color: white;
+                letter-spacing: 2px;
+                word-spacing: 3px;
+                margin: 20px 40px;
+            }
+            .stred .button{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .stred .button a{
+                text-decoration: none;
+                padding: 15px 20px;
+                margin: 20px 40px;
+                border-radius: 15px;
+                letter-spacing: 5px;
+                font-size: 25px;
+             }  
+
+/* DOMOV - BUTTON TLACITKA AJ S PRICHODOM MYSOU */
+            .button .tlacitko1{
+                color: #d3de53;
+                border: 4px white solid;
+                background: rgba(0,0,0,0.6);
+            }
+            .button .tlacitko2{
+                color: #d3de53;
+                border: 4px white solid;
+                background: rgba(0,0,0,0.6);
+            }
+            .button .tlacitko2:hover{
+                transition: 0.2s; 
+                color: white;
+                border: 4px #d3de53 solid;
+                background: rgba(0,0,0,0.9);
+                
+            }
+            .button .tlacitko1:hover{
+                transition: 0.2s; 
+                color: white;
+                border: 4px #d3de53 solid;
+                background: rgba(0,0,0,0.9);
+            }
+
+/* DOMOV SOCIALNE SIETE NA UVODNEJ STRANE */
+           .socialne{
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+               align-items: center;
+               margin-top: 80px;
+               border: yellow 1px solid;
+               border-radius: 20px;
+               background: rgba(0,0,0,0.6);
+               margin: 70px auto;
+               padding: 20px 60px;
+            }
+           .socialnesiete{
+               
+               width: 200px;
+               display: flex;
+               flex-direction: row;
+               justify-content: space-between;
+           }
+          
+           .socialnesiete img{
+               width: 70px;
+           }
+
+/* TELO CELEJ STRANKY */
+            main{
+            
+            }
+
+
+/* PETICKA */
+            footer{
+            color: white;
+            background: rgb(48, 48, 48);
+            font-size: 7px;
+            text-align: center;
+            font-weight:700px;
+            min-width: 500px;
+            padding: 5px;
+            }
+            
+            
+            
+ /* ------------------ NOVA SEKCIA -----------------*/
+                       /*  O NAS*/
+
+    /*  LOGO A UVODNY TEXT NA STRANKE O NAS */
+            .logoonas img{
+                width: 200px;
+                text-align: center;
+            }
+            .nadpisonas h2{
+                color: #d3de53;
+                text-align: center;
+                font-size: 40px;
+            }
+             header .onas{
+                 display: flex;
+                 flex-direction: column;
+                 flex-wrap: wrap;
+                 color: white;
+                 align-items: center;
+                 font-size: 40px;
+              }
+             .onas .textonas{
+                 height: 70%;
+                 margin: 40px 15%;
+                 text-align: center;
+                 font-size: 20px;
+                 letter-spacing: 2px;
+                 word-spacing: 2px;
+                 color: white;
+                 border: 2px white inset;
+                 line-height: 30px; 
+                 border-radius: 20px;
+                 padding: 20px 50px;
+                 background: rgba(0,0,0,0.4);
+                }
+             .nadpisonas{
+                 color: white;
+                 margin: 30px 0;
+             }
+             .onas h3
+                 {
+                 font-size: 30px;
+                 color: #d3de53;
+                 }
+             .spolupracujeme{
+               border-bottom: 30px;
+               margin: 30px 0;
+               text-align: center;
+                 }  
+             .spolupracujeme img{
+                  width: 200px;
+                  height: 100px;
+                 }
+
+   
+    /*  ------------ NOVA SEKCIA ------------------ */
+                   /*  KONTAKT*/  
+  
+     
+             .kontakcele{
+              display: flex;
+              flex-direction: row;
+              flex-wrap: wrap;
+              justify-content: space-evenly;
+              width: 100%;
+             }
+             .kontaktnadpis{
+                
+                    color: #d3de53;
+                    text-align: center;
+                    font-size: 40px;
+                }
+             
+
+/* LAVA PLOCHA KONTAKTU */
+          .kontaktlava{
+              width: 30%;
+              min-width: 470px;
+              color: white;
+              display: flex;
+              flex-direction: column;
+              flex-wrap: wrap;
+              justify-content:flex-start;
+              border-radius: 30px;
+              font-size: 25px;
+              background: rgba(0,0,0,0.6);
+              margin: 20px 0px;
+              gap: 30px;
+              border: white 1px solid;
+              padding: 10px;
+             }
+          .kontaktlava .tel{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            flex-direction: column;
+         }
+         .kontaktlava .social{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+         }
+          .kontaktlava .tel img{
+            width: 100px;
+            margin-right: 20px;
+            flex-wrap: wrap;
+          }
+/* SOCIALNE IKONY */
+          .kontaktlava .social img{
+            width: 50px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+           }
+          .kontaktlava .socialspolu{
+             width: 100%;
+             display: flex;
+             flex-direction: row;
+             justify-content: space-evenly;
+             flex-wrap: wrap;
+          }
+ /* NADPIS NAD FORMULAROM */         
+          .kontaktlava h1{
+            margin-top: 20px;
+            color: #d3de53;
+            text-align: center;
+            padding: 0px 60px;
+            }
+
+/* PRAVA PLOCHA KONTAKTU */
+         .kontaktprava{
+            width: 30%;
+            min-width: 470px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content:flex-start;
+            border-radius: 30px;
+            max-width: 50%;
+            margin: 50px 0px;
+            background: rgba(0,0,0,0.6);
+            
+            border: white 1px solid;
+            }
+/* NADPIS NAD FORMULAROM */
+        .nadpiskontakt{
+            margin-top: 20px;
+            color: #d3de53;
+            text-align: center;
+            padding: 0px 60px;
+           }
+/* FORMULAR V KONTAKTE */
+        .formular {
+            width: 80%;
+            height: 40%;
+            margin-top: 50px;
+            text-align: center;
+           }
+/* FORMULAR HORNA CAST */
+        .formular  input{
+            width: 70%;
+            margin: 10px auto;
+            text-align: center;
+            padding: 10px 0px;
+            border-radius: 20px;
+            font-size: 20px;
+            border: black 1px solid;
+            }
+/* FORMULAR FARBA VO VNUTRI BUNKY */
+        /* ::placeholder { 
+            color: rgb(80, 79, 79);
+          } */
+/* FORMULAR STREDNA CAST */
+        .formular textarea{
+            width: 90%;
+            padding: 20px 20px;
+            border-radius: 20px;
+            font-size: 20px;
+            outline: none;
+            }
+/* FORMULAR DOLNA CAST */
+        .formular .submit{
+           width: 60%;
+           background: white;
+           margin-top: 40px;
+           font-size: 20px;
+           font-weight: bold;
+         }
+        .formular .submit:hover{
+         transition: 0.2s; 
+        background-color: #d3de53;
+        }
+     
+        
+   
+    /* ------------------ NOVA SEKCIA -------------- */
+                        /*  KERAMIKA   */  
+  
+       .keramikaspolu{
+          color: white;
+          display: flex;
+          flex-direction: column;
+         }
+     .keramikaspolu h1{
+         text-align: center;
+         margin-bottom: 70px;
+         color: #d3de53;
+         font-size: 40px;
+        }
+     .keramikaspolu h2{
+        color: #d3de53;
+        padding: 10px;
+        font-size: 30px;
+        text-align: center;
+        }
+     .druhynadpiskeramika{
+        text-align: center;
+        font-size: 20px;
+     }
+     .keramikaspolu .keramikprvy{
+         display: flex;
+         flex-direction: row;
+         justify-content: space-evenly;
+         flex-wrap: wrap;
+         margin-bottom: 20px;
+         letter-spacing: 1.2px;
+        }
+     .keramikaspolu .keramikprvy img{
+         width: 100%;
+         border-radius: 20px 20px 0 0;
+     }
+     .keramikprvy .rovnako{
+         width: 480px;
+         background: rgba(0,0,0,0.6);
+         padding: 15px;
+         margin-bottom: 20px;
+         border: white 2px inset;
+        
+         border-radius: 20px;
+     }
+     .rovnako hr{
+         color: #d3de53;
+     }
+    
+     /* ------------------ NOVA SEKCIA -------------- */
+                        /*  CENNIK   */  
+
+/* nadpis */
+                    .cennikspolu h1{
+                    text-align: center;
+                    margin-bottom: 70px;
+                    color: #d3de53;
+                    font-size: 40px;
+                    }
+
+                    .cennikspolu h2{
+                    text-align: center;
+                    margin-bottom: 10px;
+                    color: #fff;
+                    font-size: 30px;
+                    }
+                    .cennikspolu h3{
+                    text-align: center;
+                    margin: 20px 0px;
+                    color: #d3de53;
+                    font-size: 30px;
+                    }
+                    .cennikspolu h4{
+                    text-align: center;
+                    margin-bottom: 20px;
+                    color: #fff;
+                    font-size: 15px;
+                    }
+
+                    .cennikspolu h6{
+                    text-align: center;
+                    margin: 10px 20px; 
+                    color: #d3de53;
+                    font-size: 18px;
+                    letter-spacing: 0.5px;
+                    word-spacing: 0.5px;
+                    
+                        
+                        }
+                        
+                    .cenniky{
+                    
+                    /* border-bottom: white 2px solid; */
+                    align-items: flex-start;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: space-evenly;
+                    /* padding: 50px; */
+                    }
+                    .prvylavy{
+                    margin-bottom: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    justify-content: space-around;
+                    align-items: center;
+                    border: white 2px inset;
+                    border-radius: 7px;
+                    background: rgba(0,0,0,0.5);
+                    }
+                    .prvystredny{
+                    margin-bottom: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    justify-content: space-around;
+                    align-items: center;
+                    border: white 2px inset;
+                    border-radius: 7px;
+                    background: rgba(0,0,0,0.5);
+                    }
+                    .prvypravy{
+                    margin-bottom: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    justify-content: space-around;
+                    align-items: center;
+                    border: white 2px inset;
+                    border-radius: 7px;
+                    background: rgba(0,0,0,0.5);
+                    }
+                    .prvyspolu p{
+                    margin: 5px;
+                    }
+                    .prvyspolu li{
+                    color:white;
+                    margin-top: 30px;
+                    font-size: 18px;
+                    }
+                    .prvyspolu .price{
+                    margin-top: 40px;
+                    padding-bottom: 10px;
+                    color: #d3de53;
+                    font-size: 35px;
+                    border-bottom: #d3de53 2px solid;
+                    border-radius: 30%;
+                    width: 80%;  
+                    }
+                    #viacinfo1{
+                    display: none;
+                    color: white;
+                    margin: 30px 10px; 
+                    
+                    }
+                    #viacinfo2{
+                    display: none;
+                    color: white;
+                    margin: 30px 10px; 
+                    
+                    }
+                    #viacinfo3{
+                    display: none;
+                    color: white;
+                    margin: 30px 10px; 
+                    }
+                    #viacinfo4{
+                    display: none;
+                    color: white;
+                    margin: 30px 10px; 
+                    }
+                    #viacinfo5{
+                    display: none;
+                    color: white;
+                    margin: 30px 10px; 
+                    }
+                    #viacinfo6{
+                    display: none;
+                    color: white;
+                    margin: 30px 10px; 
+                    }
+                    #viacinfo7{
+                        display: none;
+                        color: white;
+                        margin: 30px 10px; 
+                        }
+                        #viacinfo8{
+                        display: none;
+                        color: white;
+                        margin: 30px 10px; 
+                        }
+                        #viacinfo9{
+                        display: none;
+                        color: white;
+                        margin: 30px 10px; 
+                        }
+                    .kontaktinfo a{
+                    border: 2px #d3de53 solid;
+                    border-radius: 10px;
+                    text-decoration: none;
+                    font-size: 20px;
+                    padding: 10px 10px;
+                    margin: 10px;
+                    color: white;
+                    }
+                    .tlacitkoviacspolu{
+                        cursor: pointer;
+                    }
+                    .kontaktinfo button{
+                    border: 2px #d3de53 solid;
+                    border-radius: 10px;
+                    text-decoration: none;
+                    font-size: 20px;
+                    padding: 10px 10px;
+                    margin: 25px 10px;
+                    background: #d3de53;
+                    color: black;
+                    }
+                    .kontaktinfo{
+                    margin-top:  30px;
+                    }
+                    .cennikspolu p{
+
+                    color: white;
+                    font-size: 20px;
+                    align-items: center;
+                    }
+                    .prvylavy{
+                    width: 450px;
+                    }
+                    .prvystredny{
+                    width: 450px;
+                    }
+                    .prvypravy{
+                    width: 450px;
+                    }
+
+        /* ------------------ NOVA SEKCIA -------------- */
+                          /*  PORTFOLIO   */  
+
+                   .portfoliocele{
+                    margin: 0px;
+                    
+                   }  
+                .portfoliocele h1{
+                    
+                        text-align: center;
+                        margin-bottom: 70px;
+                        color: #d3de53;
+                        font-size: 40px;
+                     
+                }
+
+                .portfoliocele h6{
+                    text-align: center;
+                    margin: 10px 100px; 
+                    color: #d3de53;
+                    font-size: 18px;
+                    letter-spacing: 0.5px;
+                    word-spacing: 0.5px;
+                    
+                    
+                    }
+                   .portfoliocele img{
+                       width: 550px;
+                       margin-bottom: 20px;
+                       opacity: 0.9;
+                       cursor: pointer;
+                       
+                   }   
+                   .portfoliocele img:hover{
+                    opacity: 1;
+                    transform: scale(1.05);
+                   }
+                   .portfoliocele .portfolio1{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    
+                   }  
